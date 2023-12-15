@@ -201,6 +201,7 @@ class="fixed inset-x-0 bottom-0 flex items-center justify-between px-4 py-4 sm:p
     </x-dropdown>
 </div>
 </nav>
+<header>
 
 <!-- Mobile bottom bar -->
 <div
@@ -249,17 +250,7 @@ class="fixed inset-x-0 bottom-0 flex items-center justify-between px-4 py-4 sm:p
 </li></ul>
               </div>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
-        </nav>
-      </div>
-
-
-
-
-
-    </div>
-  </div></header>
 
     {{-- <div class="flex items-center gap-3">
         <x-dropdown align="right" width="48">

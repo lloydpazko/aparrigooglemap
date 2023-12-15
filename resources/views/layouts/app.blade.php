@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <title>dashboard</title>
     <link rel="stylesheet" href="{{ asset('css1/nicepage.css') }}" media="screen">
-<link rel="stylesheet" href="{{ asset('css1/Login.css')}}" media="screen">
+<link rel="stylesheet" href="{{ asset('css1/User-Account.css')}}" media="screen">
     <script class="u-script" type="text/javascript" src="{{ asset('css1/jquery.js') }}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{{ asset('css1/nicepage.js') }}" defer=""></script>
     <meta name="generator" content="Nicepage 6.1.3, nicepage.com">
@@ -49,33 +49,23 @@
         <div class="min-h-screen text-gray-900 bg-gray-100 dark:bg-dark-eval-0 dark:text-gray-200">
             <!-- Sidebar -->
             <x-sidebar.sidebar />
-
-            <!-- Page Wrapper -->
-            <div
-                class="flex flex-col min-h-screen"
-                :class="{
-                    'lg:ml-64': isSidebarOpen,
-                    'md:ml-16': !isSidebarOpen
-                }"
-                style="transition-property: margin; transition-duration: 150ms;"
-            >
-
                 <!-- Navbar -->
                 <x-navbar />
-
-                <!-- Page Heading -->
-                <header>
-                    <div class="p-4 sm:p-6">
-                        {{ $header }}
-                    </div>
-                </header>
+                <!-- Page Wrapper -->
+            <div
+            class="flex flex-col min-h-screen"
+            :class="{
+                'lg:ml-64': isSidebarOpen,
+                'md:ml-16': !isSidebarOpen
+            }"
+            style="transition-property: margin; transition-duration: 150ms;"
+        >
 
                 <!-- Page Content -->
                 <main class="px-4 sm:px-6 flex-1">
                     {{ $slot }}
                 </main>
 
-                <!-- Page Footer -->
                 <x-footer />
             </div>
         </div>
