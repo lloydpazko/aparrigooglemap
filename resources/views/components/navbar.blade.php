@@ -49,8 +49,9 @@
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1">
                 <li class="u-nav-item">
-                    <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" rel="nofollow" style="padding: 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" rel="nofollow" style="padding: 20px;">Maps</a>
+                    <a href="{{ url('/') }}" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" rel="nofollow" style="padding: 20px;">Home</a>
+</li><li class="u-nav-item">
+    <a href="{{ route('mapview') }}"class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" rel="nofollow" style="padding: 20px;">Maps</a>
 </li>
 </li><li class="u-nav-item">
     <div class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" rel="nofollow">
